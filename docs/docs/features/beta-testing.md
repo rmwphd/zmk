@@ -31,7 +31,7 @@ branch and create the pull request.
 ## Testing features
 
 Testing features will require you to modify the `west.yml` file. You will need to add a new remote for the pull request you
-would like to test, and change the selected remote and revision (or branch) for the `zmk` project.
+would like to test, and change the selected remote and revision (or branch) for the `zmk` project. Note: the `name` key in the `remotes` section is a name you give the new remote you're adding. Refer to it in the `remote` key in `projects`. The `name` key in `projects` refers to the name of the repository in your remote url in which to look for a copy of ZMK. Typically this will be "zmk".
 
 ### Examples
 
